@@ -3,7 +3,7 @@ var app = angular.module("demandas",['ngRoute']);
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when("/", {templateUrl: "templates/botoesPainelControle.html", controller: "damandasController"})
-        .when("/lista", {templateUrl: "templates/listagem.html", controller: "damandasController"});
+        .when("/lista", {templateUrl: "lista.html", controller: "damandasController"});
 }]);
 
 

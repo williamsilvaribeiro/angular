@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html ng-app="demandas">
+<head>
+    <meta charset="utf-8">
+    <script src="lib/angular.js"></script>
+    <script src="controller/damandasController.js"></script>
+</head>
+
+<span ng-include="'lib/cssJsSistema.html'"></span>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                Nome da Loja
+            </h1>
+        </section>
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">Lista de Pedidos</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <table id="example1" class="table table-bordered table-striped table-responsive">
+                                <thead>
+                                <tr>
+                                    <th>Número Pedido</th>
+                                    <th>Cliente</th>
+                                    <th>Loja</th>
+                                    <th>Situação</th>
+                                    <th>Ações</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>João</td>
+                                    <td>Subway</td>
+                                    <td><span class="label label-success">Entrege</span></td>
+                                    <td align="center">
+                                        <div class="btn-group-horizontal btn-group-sm">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-search"></i>
+                                            </button>
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-pencil"></i>
+                                            </button>
+                                            <button class="btn btn-danger" type="button">
+                                                <i class="fa fa-fw fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>Paulo</td>
+                                    <td>Subway</td>
+                                    <td><span class="label label-warning">A caminho</span></td>
+                                    <td align="center">
+                                        <div class="btn-group-horizontal btn-group-sm">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-search"></i>
+                                            </button>
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-pencil"></i>
+                                            </button>
+                                            <button class="btn btn-danger" type="button">
+                                                <i class="fa fa-fw fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>Joana</td>
+                                    <td>Farmacia</td>
+                                    <td><span class="label label-danger">Pendente</span></td>
+                                    <td align="center">
+                                        <div class="btn-group-horizontal btn-group-sm">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-search"></i>
+                                            </button>
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-pencil"></i>
+                                            </button>
+                                            <button class="btn btn-danger" type="button">
+                                                <i class="fa fa-fw fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>Maria</td>
+                                    <td>Gás</td>
+                                    <td><span class="label label-danger">Pendente</span></td>
+                                    <td align="center">
+                                        <div class="btn-group-horizontal btn-group-sm">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-search"></i>
+                                            </button>
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-pencil"></i>
+                                            </button>
+                                            <button class="btn btn-danger" type="button">
+                                                <i class="fa fa-fw fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>05</td>
+                                    <td>João</td>
+                                    <td>Farmacia</td>
+                                    <td><span class="label label-success">Entrege</span></td>
+                                    <td align="center">
+                                        <div class="btn-group-horizontal btn-group-sm">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-search"></i>
+                                            </button>
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-pencil"></i>
+                                            </button>
+                                            <button class="btn btn-danger" type="button">
+                                                <i class="fa fa-fw fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>06</td>
+                                    <td>Paulo</td>
+                                    <td>Conveniência</td>
+                                    <td><span class="label label-warning">A caminho</span></td>
+                                    <td align="center">
+                                        <div class="btn-group-horizontal btn-group-sm">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-search"></i>
+                                            </button>
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-pencil"></i>
+                                            </button>
+                                            <button class="btn btn-danger" type="button">
+                                                <i class="fa fa-fw fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>07</td>
+                                    <td>Joana</td>
+                                    <td>Spoleto</td>
+                                    <td><span class="label label-danger">Pendente</span></td>
+                                    <td align="center">
+                                        <div class="btn-group-horizontal btn-group-sm">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-search"></i>
+                                            </button>
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-pencil"></i>
+                                            </button>
+                                            <button class="btn btn-danger" type="button">
+                                                <i class="fa fa-fw fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>08</td>
+                                    <td>Maria</td>
+                                    <td>Spoleto</td>
+                                    <td><span class="label label-danger">Pendente</span></td>
+                                    <td align="center">
+                                        <div class="btn-group-horizontal btn-group-sm">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-search"></i>
+                                            </button>
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-pencil"></i>
+                                            </button>
+                                            <button class="btn btn-danger" type="button">
+                                                <i class="fa fa-fw fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>09</td>
+                                    <td>João</td>
+                                    <td>Spoleto</td>
+                                    <td><span class="label label-success">Entrege</span></td>
+                                    <td align="center">
+                                        <div class="btn-group-horizontal btn-group-sm">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-search"></i>
+                                            </button>
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-pencil"></i>
+                                            </button>
+                                            <button class="btn btn-danger" type="button">
+                                                <i class="fa fa-fw fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Paulo</td>
+                                    <td>Spoleto</td>
+                                    <td><span class="label label-warning">A caminho</span></td>
+                                    <td align="center">
+                                        <div class="btn-group-horizontal btn-group-sm">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-search"></i>
+                                            </button>
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-pencil"></i>
+                                            </button>
+                                            <button class="btn btn-danger" type="button">
+                                                <i class="fa fa-fw fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Joana</td>
+                                    <td>Spoleto</td>
+                                    <td><span class="label label-danger">Pendente</span></td>
+                                    <td align="center">
+                                        <div class="btn-group-horizontal btn-group-sm">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-search"></i>
+                                            </button>
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-pencil"></i>
+                                            </button>
+                                            <button class="btn btn-danger" type="button">
+                                                <i class="fa fa-fw fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Maria</td>
+                                    <td>Conveniência</td>
+                                    <td><span class="label label-danger">Pendente</span></td>
+                                    <td align="center">
+                                        <div class="btn-group-horizontal btn-group-sm">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-search"></i>
+                                            </button>
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-fw fa-pencil"></i>
+                                            </button>
+                                            <button class="btn btn-danger" type="button">
+                                                <i class="fa fa-fw fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+
+        </section>
+        <!-- /.content -->
+    </div>
+</div>
+
+<!-- jQuery 2.1.4 -->
+<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<!-- DataTables -->
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+
+
+
+<script>
+    $(function () {
+        $("#example1").DataTable();
+    });
+</script>
+
+</body>
+</html>
+
+

@@ -30,6 +30,12 @@
             </div>
             <div class="modal-body">
                 <p>Aqui serao colocados os formularios de cadastro de pedidos</p>
+
+                <input class="form-control" type="text" ng-model="contato.nome">
+                <input class="form-control" type="text" ng-model="contato.telefone">
+                <button ng-click="adicionarContato(contato)" ng-disabled="!contato.nome" class="btn btn-success">Adicionar</button>
+                <button ng-click="apagarContatos(contatos)" ng-disabled = "!isSelecionados(contatos)" class="btn btn-danger">apagar contatos</button>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

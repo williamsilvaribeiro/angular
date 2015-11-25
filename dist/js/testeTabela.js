@@ -3,5 +3,5 @@ $(function () {
 });
 
 $(function () {
-    $("#example1").DataTable();
+    $(".example1").DataTable();
 });

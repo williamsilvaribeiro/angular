@@ -29,10 +29,11 @@ app.controller("demandasController", function($scope){
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when("/", {templateUrl: "templates/botoesPainelControle.html", controller: "damandasController"})
-        .when("/lista", {templateUrl: "lista.html", controller: "damandasController"});
+        .when("/lista", {templateUrl: "templates/listagem.html", controller: "damandasController"});
 }]);
 
 
 app.controller('damandasController', function ($scope, $location) {
 
 });
+

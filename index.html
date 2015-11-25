@@ -6,19 +6,72 @@
     <script src="lib/angular.js"></script>
     <script src="lib/angular-route.min.js"></script>
     <script src="controller/damandasController.js"></script>
+    <script src="controller/pedidosController.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-
     <div ng-include="'templates/menus.html'"></div>
     <div ng-include="'templates/header.html'"></div>
-    <div ng-view="conteudo"></div>
+    <div ng-include="'templates/listagem.html'"></div>
+    <!--<div ng-view="conteudo"></div>-->
+        <div class="content-wrapper">
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <h3 class="box-title">Lista de Pedidos</h3>
+                            </div>
+                            <div class="box-body" ng-controller="demandasController">
+                                <table id="example11" class="table table-bordered table-striped table-responsive">
+                                    <thead>
+                                    <tr>
+                                        <th>Número Pedido</th>
+                                        <th>Cliente</th>
+                                        <th>Loja</th>
+                                        <th>Situação</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr ng-repeat="pedido in pedidos">
+                                        <td>{{pedido.cod}}</td>
+                                        <td>{{pedido.cliente}}</td>
+                                        <td>{{pedido.loja}}</td>
+                                        <td><span class="label label-{{pedido.label}}">{{pedido.status}}</span></td>
+                                        <td align="center">
+                                            <div class="btn-group-horizontal btn-group-sm">
+                                                <button class="btn btn-default" type="button" >
+                                                    <i class="fa fa-fw fa-search"></i>
+                                                </button>
+                                                <button class="btn btn-default" type="button">
+                                                    <i class="fa fa-fw fa-pencil"></i>
+                                                </button>
+                                                <button class="btn btn-danger" type="button">
+                                                    <i class="fa fa-fw fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
     <div ng-include="'templates/rodape.html'"></div>
 </div>
-<script src="plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
-<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="dist/js/app.min.js"></script>
 </body>
 </html>
+<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="dist/js/app.min.js"></script>
+<script src="dist/js/testeTabela.js"></script>
+

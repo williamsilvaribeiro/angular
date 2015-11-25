@@ -19,28 +19,8 @@
     </section>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Cadastro de Pedidos</h4>
-            </div>
-            <div class="modal-body">
-                <p>Aqui serao colocados os formularios de cadastro de pedidos</p>
+<span ng-include="'templates/pedidos/adicionarPedidos.html'"></span>
 
-                <input class="form-control" type="text" ng-model="contato.nome">
-                <input class="form-control" type="text" ng-model="contato.telefone">
-                <button ng-click="adicionarContato(contato)" ng-disabled="!contato.nome" class="btn btn-success">Adicionar</button>
-                <button ng-click="apagarContatos(contatos)" ng-disabled = "!isSelecionados(contatos)" class="btn btn-danger">apagar contatos</button>
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+
 

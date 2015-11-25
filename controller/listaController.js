@@ -6,10 +6,10 @@ angular.module("listaTelefonica").controller("listaControler", function ($scope)
         {nome: "Maria", telefone: "7777777"},
         {nome: "Teresa", telefone: "8888888"},
     ];
-    $scope.adicionarContato = function (contato) {
+    /*$scope.adicionarContato = function (contato) {
         $scope.contatos.push(contato);
         delete $scope.contato;
-    };
+    };*/
     $scope.classe = "selecionado";
 
     $scope.apagarContatos = function (contatos) {
